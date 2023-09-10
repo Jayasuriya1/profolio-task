@@ -1,38 +1,293 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.blue-text{
+  color: #41c9ff;
+  font-size: 1.2em;
+}
+
+.nav-bar{
+  height: 15vh;
+}
+
+.banner{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.red-text span{
+  color: #dc143c;
+}
+
+
+
+.btn a{
+  display: inline-block;
+  padding: 12px 28px;
+  background: #41c9ff;
+  border-radius: 40px;
+  box-shadow:0 0 10px #41c9ff;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.icon{
+  background: transparent;
+}
+
+.social-media a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #41c9ff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #41c9ff;
+  text-decoration: none;
+  margin: 30px 15px 30px 10px;
+}
+
+.banner h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.banner h3{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.green-arrow{
+  color: rgb(24, 210, 110);
+}
+
+.about-list li{
+  list-style: none;
+  padding: 16px;
+  margin: 16px;
+}
+
+.about-list li span{
+  margin-left: 5px;
+}
+
+.about p{
+  padding: 16px;
+  margin: 8px 0 36px;
+}
+
+.about h1{
+  margin: -5px 0 15px;
+}
+
+.title{
+  color: #aaaaaa;
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.hr-lines-1{
+  position: relative;
+  max-width: 165px;
+  color: #aaaaaa;
+  margin: 0 0 20px;
+  font-size: 14px;
+  
+}
+
+.hr-lines-2{
+  position: relative;
+  max-width: 205px;
+  color: #aaaaaa;
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+.hr-lines-3{
+  position: relative;
+  max-width: 245px;
+  color: #aaaaaa;
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 1px;
+  width: 130px;
+  background: #41c9ff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+
+.tect-stack{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  justify-content: center;
+}
+
+.skill-container{
+  height: 50px;
+  width: 10rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.project h2{
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+.project-details{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-btn{
+  border: 1px solid #d18d0d;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project-btn :hover{
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project-btn :active{
+  color: #ffffff;
+}
+
+.name{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.project img{
+  height: 14rem;
+}
+
+.card{
+  margin: 1rem;
+  
+}
+
+
+.contact-us-farm p{
+  font-size: 3rem;
+}
+
+.contact-us{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.contact-us-farm{
+  margin-bottom: 2rem;
+}
+.contactme h2{
+  margin: 30px 0;
+}
+.contact-us input,label{
+  margin: 10px 0;
+}
+
+.submit-input,.contact-us textarea{
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.contact-link-container{
+  width: 300px;
+  height: 100px;
+  background-color: #1b1b1b;
+  border: 1px solid #41c9ff;
+  border-radius: 40px;
+  box-shadow: rgba(27, 27, 27, 0.25) 0px 54px 55px, rgba(27, 27, 27, 0.12) 0px -12px 30px, rgba(27, 27, 27, 0.12) 0px 4px 6px, rgba(27, 27, 27, 0.17) 0px 12px 13px, rgba(27, 27, 27, 0.09) 0px -3px 5px;
+  margin: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 35% auto;
+}
+
+.submit-btn{
+  background-color: #1b1b1b;
+  color: #18d26e;
+  border-radius: 10px;
+  border: 2px solid #41c9ff;
+}
+
+.link{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-link-container p a{
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.round, .links-div2{
+  background-color: #1b1b1b;
 }
+
+.links,.links-para,.link-name{
+  background-color: transparent;
+}
+
+.round{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  
+}
+.round-2{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+}
+
+.links-div2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+
+.link-name{
+  margin: 0px;
+}
+
+.links{
+  color: #18d26e;
+}
+
+.insta-icon{
+  color: #41c9ff;
+}
+
